@@ -8,10 +8,12 @@
 }
 
 /* Firefox */
-html{
-  scrollbar-width: thin;
-  scrollbar-color: var(--sb-thumb) transparent !important;
-  scrollbar-gutter: stable both-edges;
+@supports not selector(::-webkit-scrollbar) {
+  html{
+    scrollbar-width: thin;
+    scrollbar-color: var(--sb-thumb) transparent !important;
+    scrollbar-gutter: stable both-edges;
+  }
 }
 
 /* WebKit (page + inner scrollers) */
@@ -34,7 +36,6 @@ body::-webkit-scrollbar-thumb,
   background-color: var(--sb-thumb) !important;
   border-radius: var(--sb-radius) !important;
   border: 2px solid transparent !important;  /* pill effect */
-  background-clip: content-box !important;
   min-height: 24px !important;
 }
 
@@ -45,10 +46,12 @@ body::-webkit-scrollbar-thumb:hover,
 }
 
 /* Keep inner areas thin in Firefox */
-.fi-sidebar .overflow-y-auto,
-.fi-main,
-.fi-modal-window .fi-modal-content,
-.fi-table .fi-table-container,
-.fi-section-content{
-  scrollbar-width: thin !important;
+@supports not selector(::-webkit-scrollbar) {
+  .fi-sidebar .overflow-y-auto,
+  .fi-main,
+  .fi-modal-window .fi-modal-content,
+  .fi-table .fi-table-container,
+  .fi-section-content{
+    scrollbar-width: thin !important;
+  }
 }
