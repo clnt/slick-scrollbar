@@ -43,7 +43,7 @@ class SlickScrollbarPlugin implements Plugin
         });
     }
 
-    /** Read a shade from Filament v4 color registry (OKLCH/hex/rgb string) */
+    /** Read a shade from the Filament color registry (OKLCH/hex/rgb string) */
     protected function shade(string $name, int $shade): ?string
     {
         $colors = FilamentColor::getColors(); // ['primary' => [50=>..., 500=>...], 'secondary'=>...]
