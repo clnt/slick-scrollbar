@@ -47,10 +47,10 @@ body::-webkit-scrollbar-thumb:hover,
 
 /* Keep inner areas thin in Firefox */
 @supports not selector(::-webkit-scrollbar) {
-  .fi-sidebar .overflow-y-auto,
+  .fi-sidebar-nav,
   .fi-main,
   .fi-modal-window .fi-modal-content,
-  .fi-table .fi-table-container,
+  .fi-ta-content-ctn,
   .fi-section-content{
     scrollbar-width: thin !important;
   }

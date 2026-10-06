@@ -4,7 +4,7 @@
 
 ## 📖 About
 
-**Slick Scrollbar** is a lightweight plugin that gives your Filament v4 panels clean, theme-aware scrollbars.  
+**Slick Scrollbar** is a lightweight plugin that gives your Filament v4 and v5 panels clean, theme-aware scrollbars.  
 It automatically inherits your panel’s colors (secondary → primary) and works seamlessly in both light and dark mode.
 
 ---
@@ -94,14 +94,14 @@ SlickScrollbarPlugin::make()
 ## 📋 Requirements
 
 - PHP ^8.2
-- Laravel ^10 | ^11 | ^12
-- Filament ^4.0
+- Laravel ^11.28 | ^12 | ^13 (as required by your Filament version)
+- Filament ^4.0 | ^5.0
 
 ---
 
 ## 🚀 Versioning
 
-- **v1.x** → Compatible with Filament v4
+- **v1.x** → Compatible with Filament v4 and v5
 - Future Filament majors will get their own major version of this package (e.g. v2.x).
 
 ---
